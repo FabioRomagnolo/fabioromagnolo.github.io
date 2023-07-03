@@ -1,0 +1,69 @@
+/* 
+* Credits to author from which I took inspiration: https://codepen.io/mburnette
+*/
+
+/* switch class for div elements */
+
+.switch {
+    display: inline-grid;
+}
+
+.switch input[type=checkbox] {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+    .switch input[type="checkbox"] + label:before {
+        background: none !important;
+    }
+
+    .switch input[type="checkbox"]:checked + label:before {
+        background-color: transparent !important;
+    }
+    
+.switch label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 4.25em;
+    height: 2.75em;
+    background: rgba(222, 222, 222, 0.5);
+    display: block;
+    border-radius: 5em;
+    position: relative;
+    margin: 0 1em;
+}
+    .switch label::before {
+        background-color: transparent;
+        border: none !important;
+    }
+    .switch label:after {
+        content: '';
+        position: absolute;
+
+        top: 0.25em;
+        left: 0.3em;
+        width: 2.25em;
+        height: 2.25em;
+
+        background: #fff;
+        border-radius: 2.25em;
+        transition: 0.3s;
+        border: none !important;
+    }
+
+.switch input:checked + label {
+    background: #ffffff;
+}
+.switch input:checked + label:after {
+    left: calc(100% - 0.25em);
+    transform: translateX(-100%);
+}
+
+
+/* language switch extension */
+.switch.lang-en label::after {
+    background-image: url('../flags/1x1/gb.svg');
+}
+.switch.lang-it label::after {
+    background-image: url('../flags/1x1/it.svg');
+}
