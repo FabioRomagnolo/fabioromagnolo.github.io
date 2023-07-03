@@ -1,0 +1,8 @@
+# GCP project creation
+
+gcloud projects create [PROJECT_ID] --set-as-default
+
+
+# Deployment
+
+gcloud app deploy --version v1

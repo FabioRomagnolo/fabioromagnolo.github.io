@@ -1,0 +1,19 @@
+runtime: python39
+service: default
+
+# Preventing costs for multiple instances in standard environment
+automatic_scaling:
+  max_instances: 1
+  max_idle_instances: 1
+
+# Congifuring WSGI (Web Server Gateway Interface) HTTP Server Gunicorn for efficient Flask's responses
+entrypoint: gunicorn main:app
+
+env_variables:
+  DEBUG: [True or False]
+  FLASK_SECRET_KEY: ...
+
+handlers:
+  - url: /.*
+    secure: always
+    script: auto
