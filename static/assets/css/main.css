@@ -2151,7 +2151,7 @@ input, select, textarea {
 		display: inline-block;
 		text-align: center;
 	}
-		.buttons-grid button {
+		.buttons-grid button, .buttons-grid .button {
 			margin: 0 0.5em 1em 0.5em;
 		}
 
