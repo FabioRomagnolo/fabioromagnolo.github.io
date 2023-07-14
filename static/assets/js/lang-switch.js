@@ -135,9 +135,9 @@ function translate(language) {
     if (language === 'en') {
       html.setAttribute('lang', "en");
       meta_locale.setAttribute("content", "en");
-      meta_description.setAttribute("content", "Fabio Romagnolo's personal Website");
+      meta_description.setAttribute("content", "Fabio Romagnolo's personal Website, available in Italian and English. Contents: bio, projects and Curriculum Vitae.");
       meta_og_locale.setAttribute("content", "en");
-      meta_og_description.setAttribute("content", "Fabio Romagnolo's personal Website");
+      meta_og_description.setAttribute("content", "Fabio Romagnolo's personal Website, available in Italian and English. Contents: bio, projects and Curriculum Vitae.");
 
       nav_item_intro_a.text("Welcome 👋");
       nav_item_first_a.text("Projects 💻");
@@ -153,9 +153,9 @@ function translate(language) {
     if (language === 'it') {
       html.setAttribute('lang', "it");
       meta_locale.setAttribute("content", "it");
-      meta_description.setAttribute("content", "Sito Web personale di Fabio Romagnolo");
+      meta_description.setAttribute("content", "Sito Web personale di Fabio Romagnolo, disponibile in Italiano ed Inglese. Contenuti: bio, progetti e Curriculum Vitae.");
       meta_og_locale.setAttribute("content", "it");
-      meta_og_description.setAttribute("content", "Sito Web personale di Fabio Romagnolo");
+      meta_og_description.setAttribute("content", "Sito Web personale di Fabio Romagnolo, disponibile in Italiano ed Inglese. Contenuti: bio, progetti e Curriculum Vitae.");
 
       nav_item_intro_a.text("Benvenuto 👋");
       nav_item_first_a.text("Progetti 💻");
